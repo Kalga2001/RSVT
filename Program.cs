@@ -1,4 +1,5 @@
 using Interview;
+using Interview.BLL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<TestDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
 
+builder.Services.AddScoped<IStatisticService, StatisticService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

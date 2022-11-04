@@ -7,16 +7,18 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Interview;
 using Interview.Models;
+using Interview.BLL;
 
 namespace Interview.Controllers
 {
     public class UsersController : Controller
     {
         private readonly TestDbContext _context;
-
-        public UsersController(TestDbContext context)
+        private readonly IStatisticService _service;
+        public UsersController(TestDbContext context, IStatisticService service)
         {
             _context = context;
+            _service = service;
         }
        
       
@@ -47,20 +49,24 @@ namespace Interview.Controllers
             return View();
         }
 
-        public IActionResult Statistica()
+        public IActionResult StatisticaYes()
         {
-            return View();
+            var count = _service.GetUsersCount((Status.Yes));
+            return View(count);
         }
 
-        public async Task<IActionResult> GetStatisticNo()
+        public IActionResult StatisticaNo()
         {
-            return View(await _context.Users.Where(t => t.Status == Status.No).ToListAsync());
+            var count = _service.GetUsersCount((Status.No));
+            return View(count);
         }
 
-        public async Task<IActionResult> GetStatisticSureNo()
+        public IActionResult StatisticaSureNo()
         {
-            return View(await _context.Users.Where(t => t.Status == Status.SureNo).ToListAsync());
+            var count = _service.GetUsersCount((Status.SureNo));
+            return View(count);
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

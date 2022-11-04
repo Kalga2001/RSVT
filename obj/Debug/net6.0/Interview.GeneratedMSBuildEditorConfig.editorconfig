@@ -47,8 +47,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MBALTA/Desktop/FormRegistration/Interview/Views/Users/Statistica.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU3RhdGlzdGljYS5jc2h0bWw=
+[C:/Users/MBALTA/Desktop/FormRegistration/Interview/Views/Users/StatisticaNo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU3RhdGlzdGljYU5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MBALTA/Desktop/FormRegistration/Interview/Views/Users/StatisticaSureNo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU3RhdGlzdGljYVN1cmVOby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MBALTA/Desktop/FormRegistration/Interview/Views/Users/StatisticaYes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU3RhdGlzdGljYVllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MBALTA/Desktop/FormRegistration/Interview/Views/_ViewImports.cshtml]
